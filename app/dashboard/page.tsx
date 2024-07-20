@@ -64,7 +64,7 @@ export default function Dashboard() {
       </div>
 
       <div className="grid gap-4 md:grid-cols-2 md:gap-4 lg:grid-cols-4 lg:gap-8 xl:grid-cols-3 xl:gap-12 mt-9">
-        <Card className="xl:col-span-2">
+        <Card className="sm:col-span-1 lg:col-span-2 xl:col-span-2">
           <CardHeader>
             <CardTitle>Commandes</CardTitle>
           </CardHeader>
@@ -74,7 +74,7 @@ export default function Dashboard() {
           </CardContent>
         </Card>
 
-        <Card>
+        <Card className="sm:col-span-1 lg:col-span-2 xl:col-span-1">
           <CardHeader>
             <CardTitle>Récentes ventes</CardTitle>
           </CardHeader>
@@ -86,7 +86,7 @@ export default function Dashboard() {
               <div className="grid gap-1">
                 <p className="text-sm font-medium">Alexandre Goumain</p>
                 <p className="text-xs text-slate-500">
-                  alexandre.goumain@gmail.com
+                  alexandre26goumain@gmail.com
                 </p>
               </div>
               <p className="ml-auto text-sm font-medium">+ 148,00€</p>
@@ -98,7 +98,7 @@ export default function Dashboard() {
               <div className="grid gap-1">
                 <p className="text-sm font-medium">Alexandre Goumain</p>
                 <p className="text-xs text-slate-500">
-                  alexandre.goumain@gmail.com
+                  alexandre26goumain@gmail.com
                 </p>
               </div>
               <p className="ml-auto text-sm font-medium">+ 200,00€</p>
@@ -110,7 +110,7 @@ export default function Dashboard() {
               <div className="grid gap-1">
                 <p className="text-sm font-medium">Alexandre Goumain</p>
                 <p className="text-xs text-slate-500">
-                  alexandre.goumain@gmail.com
+                  alexandre26goumain@gmail.com
                 </p>
               </div>
               <p className="ml-auto text-sm font-medium">+ 499,00€</p>
@@ -122,7 +122,7 @@ export default function Dashboard() {
               <div className="grid gap-1">
                 <p className="text-sm font-medium">Alexandre Goumain</p>
                 <p className="text-xs text-slate-500">
-                  alexandre.goumain@gmail.com
+                  alexandre26goumain@gmail.com
                 </p>
               </div>
               <p className="ml-auto text-sm font-medium">+ 375,00€</p>

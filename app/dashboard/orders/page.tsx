@@ -41,7 +41,7 @@ export default function OrdersPage() {
               </TableCell>
               <TableCell>
                 <p className="font-bold text-sm">Alexandre Goumain</p>
-                <p className="text-sm">alexandre.goumain@gmail.com</p>
+                <p className="text-sm">alexandre26goumain@gmail.com</p>
               </TableCell>
               <TableCell>
                 <p className="font-bold text-sm">En attente</p>
@@ -62,7 +62,7 @@ export default function OrdersPage() {
               </TableCell>
               <TableCell>
                 <p className="font-bold text-sm">Alexandre Goumain</p>
-                <p className="text-sm">alexandre.goumain@gmail.com</p>
+                <p className="text-sm">alexandre26goumain@gmail.com</p>
               </TableCell>
               <TableCell>
                 <p className="font-bold text-sm">Payé</p>
@@ -83,7 +83,7 @@ export default function OrdersPage() {
               </TableCell>
               <TableCell>
                 <p className="font-bold text-sm">Alexandre Goumain</p>
-                <p className="text-sm">alexandre.goumain@gmail.com</p>
+                <p className="text-sm">alexandre26goumain@gmail.com</p>
               </TableCell>
               <TableCell>
                 <p className="font-bold text-sm">Annulé</p>
@@ -104,7 +104,7 @@ export default function OrdersPage() {
               </TableCell>
               <TableCell>
                 <p className="font-bold text-sm">Alexandre Goumain</p>
-                <p className="text-sm">alexandre.goumain@gmail.com</p>
+                <p className="text-sm">alexandre26goumain@gmail.com</p>
               </TableCell>
               <TableCell>
                 <p className="font-bold text-sm">En attente</p>
