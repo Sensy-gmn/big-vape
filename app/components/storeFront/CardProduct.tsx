@@ -37,8 +37,8 @@ export default function CardProduct({
           <CardDescription>
             <Badge>{category}</Badge>
           </CardDescription>
-          <hr />
-          <CardDescription>{price}</CardDescription>
+          <br />
+          <CardDescription>{price} €</CardDescription>
         </CardContent>
         <CardFooter className="flex justify-between">
           <Button asChild variant="outline" className="w-full">

@@ -3,11 +3,9 @@ import ProductClient from "./productClient";
 
 const ProductsPage = () => {
   return (
-    <div>
-      <h1 className="text-4xl font-bold text-center">PAGE - Products</h1>
-
+    <div className="container mx-auto">
       <FilterMenu />
-      <section className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
+      <section className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10">
         <ProductClient />
       </section>
     </div>

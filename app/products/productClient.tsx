@@ -24,7 +24,7 @@ const ProductClient = async () => {
           key={product.id}
           title={product.title}
           price={product.price}
-          category={product.categoryName} // Use the category name
+          category={product?.categoryName ?? ""} // Use the category name
           image={product.image ?? ""}
         />
       ))}

@@ -1,10 +1,11 @@
+import EmblaCarousel from "./components/storeFront/emblaCarousel/homeCarousel";
+
 export default function Home() {
   return (
     <>
-      <h1>Home</h1>
-
+      <h1 className="text-5xl font-bold text-center">Home</h1>
       <section>
-        <h2 className="text-2xl font-bold text-center">Caroussel</h2>
+        <EmblaCarousel />
       </section>
     </>
   );

@@ -49,69 +49,71 @@ const components: { title: string; href: string; description: string }[] = [
 
 export default function FilterMenu() {
   return (
-    <NavigationMenu>
-      <NavigationMenuList>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>Parcourir</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-              <li className="row-span-3">
-                <NavigationMenuLink asChild>
-                  <a
-                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                    href="/"
-                  >
-                    <CogIcon className="h-6 w-6" />
-                    <div className="mb-2 mt-4 text-lg font-medium">
-                      En ce moment :
-                    </div>
-                    <p className="text-sm leading-tight text-muted-foreground">
-                      Découvrez tous les produits tendance.
-                    </p>
-                  </a>
-                </NavigationMenuLink>
-              </li>
-              <ListItem href="/docs" title="Meilleurs ventes">
-                Les incontournables de la semaine.
-              </ListItem>
-              <ListItem href="/docs/installation" title="Nouveautés">
-                Découvrez nos nouveux arrivages.
-              </ListItem>
-              <ListItem
-                href="/docs/primitives/typography"
-                title="Bonnes affaires"
-              >
-                Les meilleurs offres à ne pas rater.
-              </ListItem>
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>Filtrer</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-              {components.map((component) => (
-                <ListItem
-                  key={component.title}
-                  title={component.title}
-                  href={component.href}
-                >
-                  {component.description}
+    <div className="justify-center flex my-6">
+      <NavigationMenu>
+        <NavigationMenuList>
+          <NavigationMenuItem>
+            <NavigationMenuTrigger>Parcourir</NavigationMenuTrigger>
+            <NavigationMenuContent>
+              <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+                <li className="row-span-3">
+                  <NavigationMenuLink asChild>
+                    <a
+                      className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                      href="/"
+                    >
+                      <CogIcon className="h-6 w-6" />
+                      <div className="mb-2 mt-4 text-lg font-medium">
+                        En ce moment :
+                      </div>
+                      <p className="text-sm leading-tight text-muted-foreground">
+                        Découvrez tous les produits tendance.
+                      </p>
+                    </a>
+                  </NavigationMenuLink>
+                </li>
+                <ListItem href="/docs" title="Meilleurs ventes">
+                  Les incontournables de la semaine.
                 </ListItem>
-              ))}
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href="/DiscoverMysteryBox" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              {/* plan d'abonnement mensuel à un coffret mystère */}
-              coffret mystère
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
-      </NavigationMenuList>
-    </NavigationMenu>
+                <ListItem href="/docs/installation" title="Nouveautés">
+                  Découvrez nos nouveautés.
+                </ListItem>
+                <ListItem
+                  href="/docs/primitives/typography"
+                  title="Bonnes affaires"
+                >
+                  Les meilleurs offres à ne pas rater.
+                </ListItem>
+              </ul>
+            </NavigationMenuContent>
+          </NavigationMenuItem>
+          <NavigationMenuItem>
+            <NavigationMenuTrigger>Filtrer</NavigationMenuTrigger>
+            <NavigationMenuContent>
+              <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+                {components.map((component) => (
+                  <ListItem
+                    key={component.title}
+                    title={component.title}
+                    href={component.href}
+                  >
+                    {component.description}
+                  </ListItem>
+                ))}
+              </ul>
+            </NavigationMenuContent>
+          </NavigationMenuItem>
+          <NavigationMenuItem>
+            <Link href="/DiscoverMysteryBox" legacyBehavior passHref>
+              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                {/* plan d'abonnement mensuel à un coffret mystère */}
+                coffret mystère
+              </NavigationMenuLink>
+            </Link>
+          </NavigationMenuItem>
+        </NavigationMenuList>
+      </NavigationMenu>
+    </div>
   );
 }
 
