@@ -1,4 +1,4 @@
-import EmblaCarousel from "./components/storeFront/emblaCarousel/homeCarousel";
+import EmblaCarousel from "../components/storeFront/emblaCarousel/homeCarousel";
 
 export default function Home() {
   return (

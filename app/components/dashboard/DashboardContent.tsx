@@ -7,9 +7,9 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { EuroIcon, PackageOpen, ShoppingBag, User2 } from "lucide-react";
-import { ChartCommande } from "../components/dashboard/charts/ChartCommande";
+import { ChartCommande } from "./charts/ChartCommande";
 
-export default function Dashboard() {
+export default function DashboardContent() {
   return (
     <>
       <div className="grid gap-5 md:grid-cols-2 md:gap-8 lg:grid-cols-4">

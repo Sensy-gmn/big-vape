@@ -27,8 +27,8 @@ export default function CardProduct({
   image,
 }: CardProductProps) {
   return (
-    <>
-      <Card>
+    <div className="flex justify-center">
+      <Card className="max-w-80">
         <CardHeader>
           <Image src={image} alt={title} width={200} height={200} />
           <CardTitle>{title}</CardTitle>
@@ -49,6 +49,6 @@ export default function CardProduct({
           </Button>
         </CardFooter>
       </Card>
-    </>
+    </div>
   );
 }
